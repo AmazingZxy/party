@@ -25,7 +25,7 @@ public interface TypeDao {
 		Integer count(Map<String, Object> params);
 		
 		@Select("select * from "+TYPETABLE+" ")
-		List<Type> selectAllDept();
+		List<Type> selectAllType();
 		
 		@Select("select * from "+TYPETABLE+" where ID = #{id}")
 		Type selectById(int id);
@@ -36,9 +36,9 @@ public interface TypeDao {
 		
 		// 动态插入部门
 		@SelectProvider(type=TypeDynaSqlProvider.class,method="insertDept")
-		void save(Type dept);
+		void save(Type type);
 		
 		// 动态修改用户
 		@SelectProvider(type=TypeDynaSqlProvider.class,method="updateDept")
-		void update(Type dept);
+		void update(Type type);
 }
