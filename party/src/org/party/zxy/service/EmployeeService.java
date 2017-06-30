@@ -11,7 +11,7 @@ public interface EmployeeService {
 	 * 获得所有员工
 	 * @param employee 查询条件
 	 * @param pageModel 分页对象
-	 * @return Dept对象的List集合
+	 * @return 对象的List集合
 	 * */
 	List<Employee> findEmployee(Employee employee,PageModel pageModel);
 	

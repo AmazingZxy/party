@@ -21,7 +21,7 @@
   		<!-- 标签名 -->
   		<name>pager</name>
   		<!-- 标签处理类 -->
-  		<tag-class>org.fkit.hrm.util.tag.PagerTag</tag-class>
+  		<tag-class>org.party.zxy.util.tag.PagerTag</tag-class>
   		<!-- 设置标签为空 -->
   		<body-content>empty</body-content>
   		
