@@ -12,9 +12,13 @@ import org.party.zxy.domain.User;
 
 import static org.party.zxy.util.common.HrmConstants.USERTABLE;
 
-
+/**
+ * userDAO,用户对数据库的操作，
+ * @author Alice
+ *
+ */
 public interface UserDao {
-	// 根据登录名和密码查询员工
+		// 根据登录名和密码查询员工
 		@Select("select * from "+USERTABLE+" where loginname = #{loginname} and password = #{password}")
 		public User selectByLoginnameAndPassword(@Param("loginname") String loginname,@Param("password") String password);
 		
