@@ -16,7 +16,9 @@
 			            http://www.springframework.org/schema/tx/spring-tx-4.1.xsd
 			            http://mybatis.org/schema/mybatis-spring 
 			            http://mybatis.org/schema/mybatis-spring.xsd ">
-			      
+	
+	<!-- 加载配置文件 -->
+	<context:property-placeholder location="classpath:resource.properties"/> 		      
 	 <!-- mybatis:scan会扫描org.party.zxy.dao包里的所有接口当作Spring的bean配置，之后可以进行依赖注入-->  
     <mybatis:scan base-package="org.party.zxy.dao"/>   
        

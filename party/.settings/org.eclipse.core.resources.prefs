@@ -2,4 +2,5 @@ eclipse.preferences.version=1
 encoding//WebRoot/zxy.jsp=UTF-8
 encoding//src/db.properties=UTF-8
 encoding//src/log4j.properties=UTF-8
+encoding//src/resource.properties=UTF-8
 encoding/<project>=UTF-8
