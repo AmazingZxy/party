@@ -11,6 +11,7 @@ public class User implements Serializable{
 	private String password;	// 密码
 	private Integer status;		// 状态
 	private Date createDate;	// 建档日期
+	private String email;//邮箱
 	// 无参数构造器
 	public User() {
 		super();
@@ -54,10 +55,17 @@ public class User implements Serializable{
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
 	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", username=" + username + ", loginname="
 				+ loginname + ", password=" + password + ", status=" + status
-				+ ", createDate=" + createDate + "]";
+				+ ", createDate=" + createDate + ", email=" + email + "]";
 	}
+	
 }

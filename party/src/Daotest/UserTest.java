@@ -1,7 +1,9 @@
 package Daotest;
 
 import org.junit.Test;
+import org.party.zxy.dao.RetroactionDao;
 import org.party.zxy.dao.UserDao;
+import org.party.zxy.domain.Retroaction;
 import org.party.zxy.domain.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -60,6 +62,19 @@ public class UserTest {
 		user.setUsername("zxx");
 		user.setStatus(1);
 		mapper.save(user);
+		System.out.println("ok");
+		
+	}
+	@Test
+	public void saveR(){
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+		RetroactionDao mapper = ctx.getBean(RetroactionDao.class);
+		 Retroaction retroaction = new Retroaction();
+	        retroaction.setContent("测试dao");
+	        retroaction.setEmail("zxygodmini@163.com");
+	        retroaction.setTitle("测试dao");
+	        
+		mapper.save(retroaction);
 		System.out.println("ok");
 		
 	}

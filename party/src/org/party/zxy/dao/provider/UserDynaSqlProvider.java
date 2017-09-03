@@ -76,6 +76,9 @@ public class UserDynaSqlProvider {
 					if(user.getPassword() != null && !user.getPassword().equals("")){
 						VALUES("password", "#{password}");
 					}
+					if(user.getEmail()!=null&&!user.getEmail().equals("")){
+						VALUES("email","#{email}");
+					}
 				}
 			}.toString();
 		}
@@ -96,6 +99,9 @@ public class UserDynaSqlProvider {
 						}
 						if(user.getStatus()!= null){
 							SET(" status = #{status} ");
+						}
+						if(user.getEmail()!=null){
+							SET(" email = #{email}");
 						}
 						if(user.getCreateDate()!= null){
 							SET(" create_date = #{createDate} ");

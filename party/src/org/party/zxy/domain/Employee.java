@@ -21,7 +21,7 @@ public class Employee implements Serializable{
 	private String party;		// 政治面貌
 	/**
 	 *  使用@ModelAttribute接受参数的时候
-	 *  form表单上的日期，spring不知道如何转换，所以呢要在尸体累的日期属性上加上
+	 *  form表单上的日期，spring不知道如何转换，所以呢要在实体类的日期属性上加上
 	 *  @DateTimeFormat(pattern="yyyy-MM-dd")注解
 	 */
 	@DateTimeFormat(pattern="yyyy-MM-dd")

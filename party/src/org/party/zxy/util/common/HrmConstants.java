@@ -9,6 +9,8 @@ public class HrmConstants {
 	public static final String EMPLOYEETABLE = "employee_inf";
 	public static final String NOTICETABLE = "notice_inf";
 	public static final String DOCUMENTTABLE = "document_inf";
+	public static final String RETROACTION = "retroaction_inf";
+	
 	
 	// 登录
 	public static final String LOGIN = "loginForm";
